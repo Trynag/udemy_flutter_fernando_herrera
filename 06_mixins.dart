@@ -53,7 +53,7 @@ void main() {
 // 1. on: 
 // Se usan para poder acceder a los metodos y variables de la clase padre, esto quiere decir, que vamos, de cierta
 // forma a filtrar las clases que sean subclases o instancias de la clase padre. 
-// 
+//
 // 2. implements: 
 // Esto lo hacemos en los mixin para el uso de interfaces, recordando que las interfaces no se pueden aplicar un extends
 // entonces, la segregacion de interfaces, hace que el codigo sea mas modular, y se especifique el contrato sin tener
@@ -79,3 +79,4 @@ void main() {
 //     void main() {
 //       Caza().volar(); // Imprime: Avión volando!
 //     }
+//
