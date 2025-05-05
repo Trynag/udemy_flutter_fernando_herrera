@@ -40,6 +40,7 @@ class _CounterFunctionScreenState extends State<CounterFunctionScreen> {
                 fontSize: 25,
               ),
             ),
+            FlutterLogo(),
           ],
         ),
       ),
@@ -94,6 +95,7 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
+      enableFeedback: true,
       elevation: 1,
       shape: const StadiumBorder(),
       onPressed: onPressed,
