@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 const Color _myGreen = Color(0xFF368f4f);
@@ -22,7 +21,7 @@ class AppTheme {
   ThemeData theme() {
     return ThemeData(
       colorSchemeSeed: _colorTheme[selectedColorIndex],
-      brightness: Brightness.dark, // poner el tema en modo oscuro
+      // brightness: Brightness.dark, // poner el tema en modo oscuro
     );
   }
 }
