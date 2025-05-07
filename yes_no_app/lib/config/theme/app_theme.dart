@@ -20,9 +20,6 @@ class AppTheme {
   );
 
   ThemeData theme() {
-      if (kDebugMode) {
-        print(_colorTheme.length);
-      }
     return ThemeData(
       colorSchemeSeed: _colorTheme[selectedColorIndex],
       brightness: Brightness.dark, // poner el tema en modo oscuro
