@@ -40,7 +40,7 @@ class HerMessageBubble extends StatelessWidget {
         ),
       ],
 
-      // TODO: imagen
+      // TODO: image
     );
   }
 }
