@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(builder: (_) => ChatProvider(), create: (BuildContext context) {  })
+        ChangeNotifierProvider(
+          create: (_) => ChatProvider(),
+        )
       ],
       child: MaterialApp(
         theme: AppTheme(selectedColorIndex: 1).theme( ),
