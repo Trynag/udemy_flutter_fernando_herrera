@@ -19,14 +19,17 @@ class ChatProvider extends ChangeNotifier {
     final newMessage = Message(text: text, fromWho: FromWho.mine);
     messageList.add(newMessage);
 
-    if (text.startsWith('?')) await herReplay();
+    if (text.endsWith('?')) await herReplay();
 
     notifyListeners();
     moveScrollToBottom();
   }
 
   Future<void> herReplay () async { 
-    getYesNoAnswer.getAnswer();
+    final herMessage = await getYesNoAnswer.getAnswer();
+    messageList.add(herMessage);
+    notifyListeners();
+    moveScrollToBottom();
   }
 
   Future<void> moveScrollToBottom () async {
