@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 const Color _myGreen = Color(0xFF368f4f);
 List<Color> _colorTheme = [
   _myGreen,
-  Colors.green[300]!,
-  Colors.black54,
+  Colors.black,
   Colors.lightBlueAccent,
   Colors.blueGrey,
 ];

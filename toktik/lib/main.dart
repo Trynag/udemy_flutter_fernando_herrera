@@ -21,10 +21,10 @@ class MyApp extends StatelessWidget {
           create: (_) => DiscoverProvider()..loadNextPage(),
         ),
       ],
-      
+
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: AppTheme(selectedColorIndex: 0).getTheme(),
+        theme: AppTheme(selectedColorIndex: 1).getTheme(),
         title: 'TokTik',
         home: const DiscoverScreen(),
       ),
